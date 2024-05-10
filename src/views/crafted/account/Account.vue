@@ -250,6 +250,27 @@
               Settings
             </router-link>
           </li>
+
+          <li class="nav-item">
+            <router-link
+              to="/crafted/account/teams"
+              class="nav-link text-active-primary me-6"
+              active-class="active"
+            >
+              Team
+            </router-link>
+          </li>
+
+          <li class="nav-item">
+            <router-link
+              to="/crafted/account/history"
+              class="nav-link text-active-primary me-6"
+              active-class="active"
+            >
+              history
+            </router-link>
+          </li>
+          
           <!--end::Nav item-->
         </ul>
       </div>

@@ -141,6 +141,22 @@ const routes: Array<RouteRecordRaw> = [
               pageTitle: "Settings",
             },
           },
+          {
+            path: "teams",
+            name: "team",
+            component: () => import("@/views/crafted/account/Teams.vue"),
+            meta: {
+              pageTitle: "Team",
+            },
+          },
+          {
+            path: "history",
+            name: "history",
+            component: () => import("@/views/crafted/account/Historique.vue"),
+            meta: {
+              pageTitle: "history",
+            },
+          },
         ],
       },
       {

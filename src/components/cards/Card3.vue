@@ -9,7 +9,7 @@
         <div v-if="avatar" class="symbol symbol-65px symbol-circle mb-5">
           <img :src="avatar" alt="image" />
           <div
-            v-if="online"
+            v-if="Present"
             class="bg-success position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-white h-15px w-15px ms-n3 mt-n3"
           ></div>
         </div>
@@ -20,7 +20,7 @@
             >{{ initials }}</span
           >
           <div
-            v-if="online"
+            v-if="Present"
             class="bg-success position-absolute rounded-circle translate-middle start-100 top-100 border border-4 border-white h-15px w-15px ms-n3 mt-n3"
           ></div>
         </div>
@@ -40,35 +40,24 @@
 
         <!--begin::Info-->
         <div class="d-flex flex-center flex-wrap mb-5">
-          <!--begin::Stats-->
-          <div
-            class="border border-dashed rounded min-w-125px py-3 px-4 mx-3 mb-3"
-          >
-            <div class="fs-6 fw-bold text-gray-700">{{ avgEarnings }}</div>
-            <div class="fw-semibold text-gray-500">Avg. Earnings</div>
-          </div>
-          <!--end::Stats-->
-
-          <!--begin::Stats-->
-          <div
-            class="border border-dashed rounded min-w-125px py-3 px-4 mx-3 mb-3"
-          >
-            <div class="fs-6 fw-bold text-gray-700">{{ totalSales }}</div>
-            <div class="fw-semibold text-gray-500">Total Sales</div>
-          </div>
-          <!--end::Stats-->
+          
         </div>
         <!--end::Info-->
 
         <!--begin::Follow-->
-        <a v-if="connected" href="#" class="btn btn-sm btn-light-primary">
-          <KTIcon icon-name="check" icon-class="fs-3" />
-          Connected
-        </a>
-        <a v-else href="#" class="btn btn-sm btn-light">
-          <KTIcon icon-name="plus" icon-class="fs-3" />
-          Connect
-        </a>
+       
+        <!--end::Follow-->
+         <!--begin::Link-->
+         <button
+          class="btn btn-sm btn-light-primary fw-bold"
+          data-kt-drawer-toggle="true"
+          data-kt-drawer-target="#kt_drawer_chat"
+          @click="openDrawer()"
+        >
+          Send Message
+        </button>
+        <!--end::Link-->
+       
         <!--end::Follow-->
       </div>
       <!--begin::Card body-->
@@ -81,6 +70,9 @@
 <script lang="ts">
 import { getAssetPath } from "@/core/helpers/assets";
 import { defineComponent } from "vue";
+import { boolean } from "yup";
+import { DrawerComponent } from "@/assets/ts/components/_DrawerComponent";
+
 
 export default defineComponent({
   name: "card-3",
@@ -90,9 +82,9 @@ export default defineComponent({
 
     avatar: String,
 
-    online: Boolean,
-
     initials: String,
+
+    Present: Boolean,
 
     color: String,
 
@@ -100,16 +92,20 @@ export default defineComponent({
 
     position: String,
 
-    avgEarnings: String,
-
-    totalSales: String,
-
-    connected: Boolean,
+    present: Boolean,
   },
   setup() {
-    return {
-      getAssetPath,
+    const openDrawer = () => {
+      DrawerComponent?.getInstance("kt_drawer_chat")?.toggle();
     };
+    return {
+      getAssetPath, openDrawer,
+    };
+    
   },
+
+  
+
+
 });
 </script>
