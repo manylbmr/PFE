@@ -53,7 +53,7 @@
                   class="d-flex align-items-center text-gray-500 text-hover-primary me-5 mb-2"
                 >
                   <KTIcon icon-name="profile-circle" icon-class="fs-4 me-1" />
-                  Developer
+                  Developer info
                 </a>
                 <a
                   href="#"
