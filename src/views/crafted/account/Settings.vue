@@ -185,7 +185,7 @@
                     name="fnameAr"
                     class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
                     placeholder="First name Arabic"
-                    v-model="profileDetails.name"
+                    v-model="profileDetails.nameAr"
                   />
                   <div class="fv-plugins-message-container">
                     <div class="fv-help-block">
@@ -202,7 +202,7 @@
                     name="snameAr"
                     class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
                     placeholder="Second name Arabic"
-                    v-model="profileDetails.name"
+                    v-model="profileDetails.snameAr"
                   />
                   <div class="fv-plugins-message-container">
                     <div class="fv-help-block">
@@ -219,7 +219,7 @@
                     name="lnameAr"
                     class="form-control form-control-lg form-control-solid"
                     placeholder="Last name Arabic"
-                    v-model="profileDetails.surname"
+                    v-model="profileDetails.surnameAr"
                   />
                   <div class="fv-plugins-message-container">
                     <div class="fv-help-block">
@@ -729,6 +729,8 @@ export default defineComponent({
       avatar: getAssetPath("media/avatars/300-1.jpg"),
       name: "Max",
       surname: "Smith",
+      nameAr: "ماكس ",
+      surnameAr: " سميث",
       company: "Keenthemes",
       contactPhone: "044 3276 454 935",
       companySite: "keenthemes.com",

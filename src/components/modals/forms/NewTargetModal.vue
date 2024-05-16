@@ -38,15 +38,10 @@
             <!--begin::Heading-->
             <div class="mb-13 text-center">
               <!--begin::Title-->
-              <h1 class="mb-3">Set First Target</h1>
+              <h1 class="mb-3">formulaire de demande d'absence</h1>
               <!--end::Title-->
 
-              <!--begin::Description-->
-              <div class="text-gray-500 fw-semibold fs-5">
-                If you need more info, please check
-                <a href="#" class="fw-bold link-primary">Project Guidelines</a>.
-              </div>
-              <!--end::Description-->
+             
             </div>
             <!--end::Heading-->
 
@@ -54,7 +49,7 @@
             <div class="d-flex flex-column mb-8 fv-row">
               <!--begin::Label-->
               <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                <span class="required">Target Title</span>
+                <span class="required">titre de la demande</span>
                 <i
                   class="fas fa-exclamation-circle ms-2 fs-7"
                   data-bs-toggle="tooltip"
@@ -66,7 +61,7 @@
               <el-form-item prop="targetTitle">
                 <el-input
                   v-model="targetData.targetTitle"
-                  placeholder="Enter Target Title"
+                  placeholder="Entrer un titre"
                   name="targetTitle"
                 ></el-input>
               </el-form-item>
@@ -77,47 +72,44 @@
             <div class="row g-9 mb-8">
               <!--begin::Col-->
               <div class="col-md-6 fv-row">
-                <label class="required fs-6 fw-semibold mb-2">Assign</label>
+                <label class="required fs-6 fw-semibold mb-2">type</label>
 
                 <el-form-item prop="assign">
                   <el-select
                     v-model="targetData.assign"
-                    placeholder="Select a Team Member"
+                    placeholder="Selectionner un type"
                     name="assign"
                     as="select"
                   >
-                    <el-option value="">Select user...</el-option>
-                    <el-option label="Karina Clark" value="1"
-                      >Karina Clark</el-option
+                    
+                    <el-option label="Absence Remunérée (Max 5 days)" value="1"
+                      >Absence Remunérée (Max 5 days)</el-option
                     >
-                    <el-option label="Robert Doe" value="2"
-                      >Robert Doe</el-option
+
+                    <el-option label="Absence Non Remunérée (Max 5 days)" value="2"
+                      >Absence Non Remunérée (Max 5 days)</el-option
                     >
-                    <el-option label="Niel Owen" value="3">Niel Owen</el-option>
-                    <el-option label="Olivia Wild" value="4"
-                      >Olivia Wild</el-option
-                    >
-                    <el-option label="Sean Bean" value="5">Sean Bean</el-option>
-                  </el-select>
+
+                   </el-select>
                 </el-form-item>
               </div>
               <!--end::Col-->
 
               <!--begin::Col-->
               <div class="col-md-6 fv-row">
-                <label class="required fs-6 fw-semibold mb-2">Due Date</label>
+                <label class="required fs-6 fw-semibold mb-2">Date Debut</label>
 
                 <!--begin::Input-->
                 <div class="position-relative align-items-center">
                   <!--begin::Datepicker-->
-                  <el-form-item prop="dueDate">
+                  <el-form-item prop="DateDebut">
                     <el-date-picker
-                      v-model="targetData.dueDate"
+                      v-model="targetData.DateDebut"
                       type="date"
                       placeholder="Select a date"
                       :teleported="false"
                       popper-class="override-styles"
-                      name="dueDate"
+                      name="DateDebut"
                     />
                   </el-form-item>
                   <!--end::Datepicker-->
@@ -125,12 +117,36 @@
                 <!--end::Input-->
               </div>
               <!--end::Col-->
+
+<!--begin::Col-->
+<div class="col-md-6 fv-row">
+                <label class="required fs-6 fw-semibold mb-2">Date Fin</label>
+
+                <!--begin::Input-->
+                <div class="position-relative align-items-center">
+                  <!--begin::Datepicker-->
+                  <el-form-item prop="DateFin">
+                    <el-date-picker
+                      v-model="targetData.DateFin"
+                      type="date"
+                      placeholder="Select a date"
+                      :teleported="false"
+                      popper-class="override-styles"
+                      name="DateFin"
+                    />
+                  </el-form-item>
+                  <!--end::Datepicker-->
+                </div>
+                <!--end::Input-->
+              </div>
+              <!--end::Col-->
+
             </div>
             <!--end::Input group-->
 
             <!--begin::Input group-->
             <div class="d-flex flex-column mb-8">
-              <label class="fs-6 fw-semibold mb-2">Target Details</label>
+              <label class="fs-6 fw-semibold mb-2">Details</label>
 
               <el-form-item prop="targetDetails">
                 <el-input
@@ -138,75 +154,33 @@
                   type="textarea"
                   rows="3"
                   name="targetDetails"
-                  placeholder="Type Target Details"
+                  placeholder="Entrez les details de la demande"
                 />
               </el-form-item>
             </div>
             <!--end::Input group-->
 
-            <!--begin::Input group-->
-            <div class="d-flex flex-column mb-8 fv-row">
-              <!--begin::Label-->
-              <label class="d-flex align-items-center fs-6 fw-semibold mb-2">
-                <span class="required">Tags</span>
-                <i
-                  class="fas fa-exclamation-circle ms-2 fs-7"
-                  data-bs-toggle="tooltip"
-                  title="Specify a target priorty"
-                ></i>
-              </label>
-              <!--end::Label-->
 
-              <el-form-item prop="tags">
-                <el-select
-                  v-model="targetData.tags"
-                  multiple
-                  filterable
-                  allow-create
-                  default-first-option
-                  placeholder="Choose tags for your target"
-                >
-                  <el-option label="Important" value="important"> </el-option>
-                  <el-option label="Urgent" value="urgent"> </el-option>
-                  <el-option label="High" value="high"> </el-option>
-                  <el-option label="Low" value="low"> </el-option>
-                  <el-option label="Medium" value="medium"> </el-option>
-                </el-select>
+
+            <!--begin::Input group-->
+            <div class="d-flex flex-column mb-8">
+              <label class="fs-6 fw-semibold mb-2">Introduire Document justificatif</label>
+
+              <el-form-item prop="targetDoc">
+                <el-input
+                  v-model="targetData.targetDoc"
+                  type="file"
+                 
+                  name="targetDoc"
+                 
+                />
               </el-form-item>
             </div>
             <!--end::Input group-->
 
-            <!--begin::Input group-->
-            <div class="d-flex flex-stack mb-8">
-              <!--begin::Label-->
-              <div class="me-5">
-                <label class="fs-6 fw-semibold"
-                  >Adding Users by Team Members</label
-                >
 
-                <div class="fs-7 fw-semibold text-gray-500">
-                  If you need more info, please check budget planning
-                </div>
-              </div>
-              <!--end::Label-->
-
-              <!--begin::Switch-->
-              <label
-                class="form-check form-switch form-check-custom form-check-solid"
-              >
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value="1"
-                  checked
-                />
-                <span class="form-check-label fw-semibold text-gray-500">
-                  Allowed
-                </span>
-              </label>
-              <!--end::Switch-->
-            </div>
-            <!--end::Input group-->
+          
+          
 
             <!--begin::Input group-->
             <div class="mb-15 fv-row">
@@ -217,7 +191,7 @@
                   <label class="fs-6">Notifications</label>
 
                   <div class="fs-7 text-gray-500">
-                    Allow Notifications by Phone or Email
+                    Autoriser les notifications par Email
                   </div>
                 </div>
                 <!--end::Label-->
@@ -236,7 +210,7 @@
                       checked
                     />
 
-                    <span class="form-check-label fw-semibold"> Email </span>
+                    <span class="form-check-label fw-semibold"> Oui </span>
                   </label>
                   <!--end::Checkbox-->
 
@@ -249,7 +223,7 @@
                       value="phone"
                     />
 
-                    <span class="form-check-label fw-semibold"> Phone </span>
+                    <span class="form-check-label fw-semibold"> Non </span>
                   </label>
                   <!--end::Checkbox-->
                 </div>
@@ -321,8 +295,10 @@ import Swal from "sweetalert2/dist/sweetalert2.js";
 interface NewAddressData {
   targetTitle: string;
   assign: string;
-  dueDate: string;
+  DateDebut: string;
+  DateFin: string;
   targetDetails: string;
+  targetDoc: File;
   tags: Array<string>;
 }
 
@@ -337,8 +313,10 @@ export default defineComponent({
     const targetData = ref<NewAddressData>({
       targetTitle: "",
       assign: "",
-      dueDate: "",
+      DateDebut: "",
+      DateFin: "",
       targetDetails: "",
+      targetDoc: null,
       tags: ["important", "urgent"],
     });
 
@@ -357,7 +335,14 @@ export default defineComponent({
           trigger: "change",
         },
       ],
-      dueDate: [
+      DateDebut: [
+        {
+          required: true,
+          message: "Please select Activity zone",
+          trigger: "change",
+        },
+      ],
+      DateFin: [
         {
           required: true,
           message: "Please select Activity zone",

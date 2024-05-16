@@ -11,7 +11,7 @@
 
       <!--begin::Action-->
       <router-link
-        to="/account/settings"
+        to="settings"
         class="btn btn-primary align-self-center"
         >Edit Profile</router-link
       >
@@ -19,12 +19,27 @@
     </div>
     <!--begin::Card header-->
 
+   
+
     <!--begin::Card body-->
     <div class="card-body p-9">
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Code </label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">MS23DD1</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
       <!--begin::Row-->
       <div class="row mb-7">
         <!--begin::Label-->
-        <label class="col-lg-4 fw-semibold text-muted">Full Name</label>
+        <label class="col-lg-4 fw-semibold text-muted">Full Name </label>
         <!--end::Label-->
 
         <!--begin::Col-->
@@ -35,19 +50,151 @@
       </div>
       <!--end::Row-->
 
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Full Name Arabic </label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">ماكس سميث</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted"> maiden name</label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">/</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted"> maiden name arabic</label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">/</span>
+        </div>
+        <!--end::Col-->
+      </div>
+      
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Birth Date </label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">24/12/2003</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Birth Place</label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">EL Biar</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Birth country </label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">Algeria</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Gender </label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">Male</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
       <!--begin::Input group-->
       <div class="row mb-7">
         <!--begin::Label-->
-        <label class="col-lg-4 fw-semibold text-muted">Company</label>
+        <label class="col-lg-4 fw-semibold text-muted">Team</label>
         <!--end::Label-->
 
         <!--begin::Col-->
         <div class="col-lg-8 fv-row">
-          <span class="fw-semibold fs-6">Keenthemes</span>
+          <span class="fw-semibold fs-6">developpement departement</span>
         </div>
         <!--end::Col-->
       </div>
       <!--end::Input group-->
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Position</label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">Team Responsible</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Family situation </label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">Married</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Children Number</label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">2</span>
+        </div>
+        <!--end::Col-->
+      </div>
+
+      <div class="row mb-7">
+        <!--begin::Label-->
+        <label class="col-lg-4 fw-semibold text-muted">Nationalities</label>
+        <!--end::Label-->
+
+        <!--begin::Col-->
+        <div class="col-lg-8">
+          <span class="fw-bold fs-6 text-gray-900">Algerian, French</span>
+        </div>
+        <!--end::Col-->
+      </div>
 
       <!--begin::Input group-->
       <div class="row mb-7">
@@ -72,42 +219,29 @@
       </div>
       <!--end::Input group-->
 
-      <!--begin::Input group-->
       <div class="row mb-7">
         <!--begin::Label-->
-        <label class="col-lg-4 fw-semibold text-muted">Company Site</label>
+        <label class="col-lg-4 fw-semibold text-muted">Reliquat </label>
         <!--end::Label-->
 
         <!--begin::Col-->
         <div class="col-lg-8">
-          <a href="#" class="fw-semibold fs-6 text-dark text-hover-primary"
-            >keenthemes.com</a
-          >
+          <span class="fw-bold fs-6 text-gray-900">25 days</span>
         </div>
         <!--end::Col-->
       </div>
-      <!--end::Input group-->
 
-      <!--begin::Input group-->
       <div class="row mb-7">
         <!--begin::Label-->
-        <label class="col-lg-4 fw-semibold text-muted">
-          Country
-          <i
-            class="fas fa-exclamation-circle ms-1 fs-7"
-            v-tooltip
-            title="Country of origination"
-          ></i>
-        </label>
+        <label class="col-lg-4 fw-semibold text-muted">Entry Date</label>
         <!--end::Label-->
 
         <!--begin::Col-->
         <div class="col-lg-8">
-          <span class="fw-bold fs-6 text-gray-900">Germany</span>
+          <span class="fw-bold fs-6 text-gray-900">21/05/2023</span>
         </div>
         <!--end::Col-->
       </div>
-      <!--end::Input group-->
 
       <!--begin::Input group-->
       <div class="row mb-7">
@@ -123,85 +257,15 @@
       </div>
       <!--end::Input group-->
 
-      <!--begin::Input group-->
-      <div class="row mb-10">
-        <!--begin::Label-->
-        <label class="col-lg-4 fw-semibold text-muted">Allow Changes</label>
-        <!--begin::Label-->
-
-        <!--begin::Label-->
-        <div class="col-lg-8">
-          <span class="fw-semibold fs-6">Yes</span>
-        </div>
-        <!--begin::Label-->
-      </div>
-      <!--end::Input group-->
-
-      <div
-        class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6"
-      >
-        <KTIcon
-          icon-name="information-5"
-          icon-class="fs-2tx text-warning me-4"
-        />
-        <!--begin::Wrapper-->
-        <div class="d-flex flex-stack flex-grow-1">
-          <!--begin::Content-->
-          <div class="fw-semibold">
-            <h4 class="text-gray-800 fw-bold">We need your attention!</h4>
-
-            <div class="fs-6 text-gray-600">
-              Your payment was declined. To start using tools, please
-              <a class="fw-bold" href="#">Add Payment Method</a>.
-            </div>
-          </div>
-          <!--end::Content-->
-        </div>
-        <!--end::Wrapper-->
-      </div>
+      
+      
     </div>
     <!--end::Card body-->
   </div>
   <!--end::details View-->
 
   <!--begin::Row-->
-  <div class="row gy-10 gx-xl-10">
-    <!--begin::Col-->
-    <div class="col-xl-6">
-      <KTChartWidget1
-        widget-classes="card-xxl-stretch mb-5 mb-xl-10"
-      ></KTChartWidget1>
-    </div>
-    <!--end::Col-->
-
-    <!--begin::Col-->
-    <div class="col-xl-6">
-      <KTListWidget1
-        widget-classes="card-xxl-stretch mb-5 mb-xl-10'"
-      ></KTListWidget1>
-    </div>
-    <!--end::Col-->
-  </div>
-  <!--end::Row-->
-
-  <!--begin::Row-->
-  <div class="row gy-10 gx-xl-10">
-    <!--begin::Col-->
-    <div class="col-xl-6">
-      <KTListWidget5
-        widget-classes="card-xxl-stretch mb-5 mb-xl-10"
-      ></KTListWidget5>
-    </div>
-    <!--end::Col-->
-
-    <!--begin::Col-->
-    <div class="col-xl-6">
-      <KTTableWidget5
-        widget-classes="card-xxl-stretch mb-5 mb-xl-10"
-      ></KTTableWidget5>
-    </div>
-    <!--end::Col-->
-  </div>
+  
   <!--end::Row-->
 </template>
 
