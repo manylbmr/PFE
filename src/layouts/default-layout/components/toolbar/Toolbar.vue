@@ -30,7 +30,7 @@
          <a
           href="#"
           class="btn btn-sm fw-bold btn-primary"
-          data-bs-toggle="modal_congé"
+          data-bs-toggle="modal"
           data-bs-target="#kt_modal_new_target_congé"
           >Demande congé</a
         >
@@ -40,7 +40,7 @@
          <a
           href="#"
           class="btn btn-sm fw-bold btn-primary"
-          data-bs-toggle="modal_doc"
+          data-bs-toggle="modal"
           data-bs-target="#kt_modal_new_target_doc"
           >Demande document</a
         >

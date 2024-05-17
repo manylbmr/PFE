@@ -2,7 +2,7 @@
     <!--begin::Modal - New Target-->
     <div
       class="modal fade"
-      id="kt_modal_new_target"
+      id="kt_modal_new_target_doc"
       ref="newTargetModalRef"
       tabindex="-1"
       aria-hidden="true"

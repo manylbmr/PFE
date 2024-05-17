@@ -2,7 +2,7 @@
     <!--begin::Modal - New Target-->
     <div
       class="modal fade"
-      id="kt_modal_new_target"
+      id="kt_modal_new_target_congé"
       ref="newTargetModalRef"
       tabindex="-1"
       aria-hidden="true"
@@ -38,7 +38,7 @@
               <!--begin::Heading-->
               <div class="mb-13 text-center">
                 <!--begin::Title-->
-                <h1 class="mb-3">formulaire de demande d'absence</h1>
+                <h1 class="mb-3">formulaire de demande de congé</h1>
                 <!--end::Title-->
   
                
@@ -82,14 +82,26 @@
                       as="select"
                     >
                       
-                      <el-option label="Absence Remunérée (Max 5 days)" value="1"
-                        >Absence Remunérée (Max 5 days)</el-option
+                      <el-option label="annuel" value="1"
+                        >Annuel</el-option
                       >
   
-                      <el-option label="Absence Non Remunérée (Max 5 days)" value="2"
-                        >Absence Non Remunérée (Max 5 days)</el-option
+                      <el-option label="sans solde" value="2"
+                        >Sans solde</el-option
+                      >
+
+                      <el-option label="maladie" value="3"
+                        >Maladie</el-option
                       >
   
+                      <el-option label="exceptionnel" value="4"
+                        >exceptionnel</el-option
+                      >
+
+                      <el-option label="Reliquat" value="5"
+                        >Reliquat</el-option
+                      >
+
                      </el-select>
                   </el-form-item>
                 </div>
@@ -316,7 +328,7 @@
         DateDebut: "",
         DateFin: "",
         targetDetails: "",
-        targetDoc: null,
+        targetDoc: null as File | null,
         tags: ["important", "urgent"],
       });
   
