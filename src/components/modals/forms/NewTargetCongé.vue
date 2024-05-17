@@ -333,7 +333,7 @@
       });
   
 
-      
+
       const rules = ref({
         targetTitle: [
           {
@@ -425,6 +425,8 @@
     },
   });
   </script>
+
+  
   
   <style lang="scss">
   .override-styles {
