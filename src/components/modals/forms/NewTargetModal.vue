@@ -70,30 +70,7 @@
 
             <!--begin::Input group-->
             <div class="row g-9 mb-8">
-              <!--begin::Col-->
-              <div class="col-md-6 fv-row">
-                <label class="required fs-6 fw-semibold mb-2">type</label>
-
-                <el-form-item prop="assign">
-                  <el-select
-                    v-model="targetData.assign"
-                    placeholder="Selectionner un type"
-                    name="assign"
-                    as="select"
-                  >
-                    
-                    <el-option label="Absence Remunérée (Max 5 days)" value="1"
-                      >Absence Remunérée (Max 5 days)</el-option
-                    >
-
-                    <el-option label="Absence Non Remunérée (Max 5 days)" value="2"
-                      >Absence Non Remunérée (Max 5 days)</el-option
-                    >
-
-                   </el-select>
-                </el-form-item>
-              </div>
-              <!--end::Col-->
+              
 
               <!--begin::Col-->
               <div class="col-md-6 fv-row">
@@ -140,6 +117,36 @@
                 <!--end::Input-->
               </div>
               <!--end::Col-->
+
+
+
+              <!--begin::Col-->
+              <div class="col-md-6 fv-row">
+                <label class="required fs-6 fw-semibold mb-2">type</label>
+
+                <el-form-item prop="assign">
+                  <el-select
+                    v-model="targetData.assign"
+                    placeholder="Selectionner un type"
+                    name="assign"
+                    as="select"
+                  >
+                    
+                    <el-option label="Absence Remunérée (Max 5 days)" value="1"
+                      >Absence Remunérée (Max 5 days)</el-option
+                    >
+
+                    <el-option label="Absence Non Remunérée (Max 5 days)" value="2"
+                      >Absence Non Remunérée (Max 5 days)</el-option
+                    >
+
+                   </el-select>
+                </el-form-item>
+              </div>
+              <!--end::Col-->
+              
+
+
 
             </div>
             <!--end::Input group-->

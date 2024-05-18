@@ -38,7 +38,7 @@
               <!--begin::Heading-->
               <div class="mb-13 text-center">
                 <!--begin::Title-->
-                <h1 class="mb-3">formulaire de demande d'absence</h1>
+                <h1 class="mb-3">formulaire de demande de document</h1>
                 <!--end::Title-->
   
                
@@ -82,12 +82,32 @@
                       as="select"
                     >
                       
-                      <el-option label="Absence Remunérée (Max 5 days)" value="1"
-                        >Absence Remunérée (Max 5 days)</el-option
+                      <el-option label="Attestation de travail" value="1"
+                        >Attestation de travail</el-option
                       >
   
-                      <el-option label="Absence Non Remunérée (Max 5 days)" value="2"
-                        >Absence Non Remunérée (Max 5 days)</el-option
+                      <el-option label="Attestation de travail et des salaires (ATS)" value="2"
+                        >Attestation de travail et des salaires (ATS)</el-option
+                      >
+
+                      <el-option label="Relevé des émoluments" value="3"
+                        >Relevé des émoluments</el-option
+                      >
+
+                      <el-option label="certificat de travail" value="4"
+                        >Certificat de travail</el-option
+                      >
+
+                      <el-option label="Solde de Tout Compte (STC)" value="5"
+                        >Solde de Tout Compte (STC)</el-option
+                      >
+
+                      <el-option label="Fiche de paye" value="6"
+                        >Fiche de paye</el-option
+                      >
+
+                      <el-option label="Autre" value="7"
+                        >Autre</el-option
                       >
   
                      </el-select>
@@ -95,52 +115,7 @@
                 </div>
                 <!--end::Col-->
   
-                <!--begin::Col-->
-                <div class="col-md-6 fv-row">
-                  <label class="required fs-6 fw-semibold mb-2">Date Debut</label>
-  
-                  <!--begin::Input-->
-                  <div class="position-relative align-items-center">
-                    <!--begin::Datepicker-->
-                    <el-form-item prop="DateDebut">
-                      <el-date-picker
-                        v-model="targetData.DateDebut"
-                        type="date"
-                        placeholder="Select a date"
-                        :teleported="false"
-                        popper-class="override-styles"
-                        name="DateDebut"
-                      />
-                    </el-form-item>
-                    <!--end::Datepicker-->
-                  </div>
-                  <!--end::Input-->
-                </div>
-                <!--end::Col-->
-  
-  <!--begin::Col-->
-  <div class="col-md-6 fv-row">
-                  <label class="required fs-6 fw-semibold mb-2">Date Fin</label>
-  
-                  <!--begin::Input-->
-                  <div class="position-relative align-items-center">
-                    <!--begin::Datepicker-->
-                    <el-form-item prop="DateFin">
-                      <el-date-picker
-                        v-model="targetData.DateFin"
-                        type="date"
-                        placeholder="Select a date"
-                        :teleported="false"
-                        popper-class="override-styles"
-                        name="DateFin"
-                      />
-                    </el-form-item>
-                    <!--end::Datepicker-->
-                  </div>
-                  <!--end::Input-->
-                </div>
-                <!--end::Col-->
-  
+                
               </div>
               <!--end::Input group-->
   
@@ -161,25 +136,6 @@
               <!--end::Input group-->
   
   
-  
-              <!--begin::Input group-->
-              <div class="d-flex flex-column mb-8">
-                <label class="fs-6 fw-semibold mb-2">Introduire Document justificatif</label>
-  
-                <el-form-item prop="targetDoc">
-                  <el-input
-                    v-model="targetData.targetDoc"
-                    type="file"
-                   
-                    name="targetDoc"
-                   
-                  />
-                </el-form-item>
-              </div>
-              <!--end::Input group-->
-  
-  
-            
             
   
               <!--begin::Input group-->

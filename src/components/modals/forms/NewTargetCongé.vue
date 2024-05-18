@@ -70,43 +70,9 @@
   
               <!--begin::Input group-->
               <div class="row g-9 mb-8">
-                <!--begin::Col-->
-                <div class="col-md-6 fv-row">
-                  <label class="required fs-6 fw-semibold mb-2">type</label>
-  
-                  <el-form-item prop="assign">
-                    <el-select
-                      v-model="targetData.assign"
-                      placeholder="Selectionner un type"
-                      name="assign"
-                      as="select"
-                    >
-                      
-                      <el-option label="annuel" value="1"
-                        >Annuel</el-option
-                      >
-  
-                      <el-option label="sans solde" value="2"
-                        >Sans solde</el-option
-                      >
+             
+              
 
-                      <el-option label="maladie" value="3"
-                        >Maladie</el-option
-                      >
-  
-                      <el-option label="exceptionnel" value="4"
-                        >exceptionnel</el-option
-                      >
-
-                      <el-option label="Reliquat" value="5"
-                        >Reliquat</el-option
-                      >
-
-                     </el-select>
-                  </el-form-item>
-                </div>
-                <!--end::Col-->
-  
                 <!--begin::Col-->
                 <div class="col-md-6 fv-row">
                   <label class="required fs-6 fw-semibold mb-2">Date Debut</label>
@@ -152,6 +118,47 @@
                   <!--end::Input-->
                 </div>
                 <!--end::Col-->
+
+
+   <!--begin::Col-->
+   <div class="col-md-6 fv-row">
+                  <label class="required fs-6 fw-semibold mb-2">type</label>
+  
+                  <el-form-item prop="assign">
+                    <el-select
+                      v-model="targetData.assign"
+                      placeholder="Selectionner un type"
+                      name="assign"
+                      as="select"
+                    >
+                      
+                      <el-option label="annuel" value="1"
+                        >Annuel</el-option
+                      >
+  
+                      <el-option label="sans solde" value="2"
+                        >Sans solde</el-option
+                      >
+
+                      <el-option label="maladie" value="3"
+                        >Maladie</el-option
+                      >
+  
+                      <el-option label="exceptionnel" value="4"
+                        >exceptionnel</el-option
+                      >
+
+                      <el-option label="Reliquat" value="5"
+                        >Reliquat</el-option
+                      >
+
+                     </el-select>
+                  </el-form-item>
+                </div>
+                <!--end::Col-->
+  
+
+
   
               </div>
               <!--end::Input group-->
@@ -426,7 +433,7 @@
   });
   </script>
 
-  
+
   
   <style lang="scss">
   .override-styles {
